@@ -21,8 +21,18 @@ class DicePage extends StatelessWidget {
     return Center(
       child: Row(
         children: <Widget>[
-          Expanded(child: Image.asset('images/dice1.png')),
-          Expanded(child: Image.asset('images/dice1.png')),
+          Expanded(
+              child: FlatButton(
+                  onPressed: () {
+                    print('事件触发');
+                  },
+                  child: Image.asset('images/dice1.png'))),
+          Expanded(
+              child: FlatButton(
+                  onPressed: () {
+                    print('事件触发2');
+                  },
+                  child: Image.asset('images/dice1.png'))),
         ],
       ),
     );
