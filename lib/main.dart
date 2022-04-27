@@ -22,13 +22,13 @@ class DicePage extends StatelessWidget {
       child: Row(
         children: <Widget>[
           Expanded(
-              child: FlatButton(
+              child: TextButton(
                   onPressed: () {
                     print('事件触发');
                   },
                   child: Image.asset('images/dice1.png'))),
           Expanded(
-              child: FlatButton(
+              child: TextButton(
                   onPressed: () {
                     print('事件触发2');
                   },
