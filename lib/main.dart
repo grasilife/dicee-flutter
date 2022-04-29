@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -31,7 +33,7 @@ class _DicePageState extends State<DicePage> {
               child: TextButton(
                   onPressed: () {
                     setState(() {
-                      leftDiceNumber = 4;
+                      leftDiceNumber = Random().nextInt(6) + 1;
                       print('更新视图');
                     });
                   },
